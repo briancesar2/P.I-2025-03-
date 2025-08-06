@@ -1,126 +1,117 @@
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, sans-serif;
+  
 }
 
 body {
-  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  background-color: #fdf6ef;
   color: #333;
+background-color: #e07b2f;
 }
 
 .container {
   display: flex;
 }
 
+/* Menu lateral */
 .sidebar {
-  width: 150px;
-  background-color: #e47926;
+  width: 120px;
+  background-color: #e07b2f;
   display: flex;
   flex-direction: column;
   padding: 20px 10px;
-  height: 100vh;
 }
 
 .sidebar button {
-  background-color: #f3a95e;
-  border: none;
+  background-color: #cc6a26;
   color: white;
+  border: none;
   padding: 10px;
   margin: 5px 0;
   cursor: pointer;
-  font-weight: bold;
-  border-radius: 5px;
+  border-radius: 8px;
 }
 
 .sidebar button:hover {
-  background-color: #d66700;
+  background-color: #b45a1f;
 }
 
+/* Conteúdo principal */
 .content {
   flex: 1;
   padding: 20px;
 }
 
-.hero {
-  background-image: url('https://i.imgur.com/OIQXtRm.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 40px;
-  color: #fff;
-  border-radius: 10px;
-  margin-bottom: 30px;
-  position: relative;
+/* Seção de boas-vindas */
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  
 }
 
-.hero h1 {
+.intro-text {
+  max-width: 60%;
+}
+
+.intro h1 {
   font-size: 24px;
-  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.hero h2 {
+.intro h2 {
   font-size: 20px;
-  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #111;
 }
 
-.hero p {
-  margin: 20px 0;
-  line-height: 1.6;
-  font-size: 16px;
+.intro p {
+  margin-bottom: 10px;
+  line-height: 1.5;
 }
 
-.hero h3 {
-  font-size: 18px;
-  font-style: italic;
+.highlight {
   font-weight: bold;
-  color: #ff7f00;
+  font-style: italic;
+  color: #a33300;
 }
 
+.intro-image img {
+width: 1000px;
+border-radius: 10px;
+position: absolute; 
+top: 0;
+left: 0;
+z-index: -1; 
+ 
+}
+
+/* Níveis de treino */
 .levels {
   display: flex;
-  justify-content: space-between;
   gap: 20px;
+  justify-content: space-between;
+ 
 }
 
-.card {
-  background-color: #fff7ef;
-  border: 2px solid #e47926;
-  border-radius: 8px;
-  padding: 15px;
-  width: 32%;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+.level {
+  flex: 1;
+  background-color: #fff3e0;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #f2c188;
 }
 
-.card img {
-  width: 100%;
-  height: auto;
+.level h3 {
   margin-bottom: 10px;
-  border-radius: 5px;
+  color: #b45309;
 }
 
-.card h4 {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #e47926;
-}
-
-.card p {
+.level p {
   font-size: 14px;
   margin-bottom: 10px;
-}
-
-
-.seta1{
-  width:50px;
-}
-.inisection{
-  background-color: F0B01F;
-}
-.intsection{
-  background-color: F0951F;
-}
-.avansection{
-  background-color:F0711F;
 }
