@@ -91,19 +91,37 @@ z-index: -1;
 }
 
 /* Níveis de treino */
-.levels {
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
- margin-top: 660px;
+.niveis{
+    background-color: #ffffff;
+    padding: 10px;
+}
+.abrir{
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    outline-width: 1px;
+    outline-style:double;
+    outline-color: #333;
+}
+.abrir h1{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+.seta{
+    width: 150px;
+    height: 150px;
 }
 
-.level {
-  flex: 1;
-  background-color: #fff3e0;
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid #f2c188;
+
+.level li{
+    list-style: none;
+    
+}
+
+.descricao{
+    font-size: 100px;
 }
 
 .level h3 {
