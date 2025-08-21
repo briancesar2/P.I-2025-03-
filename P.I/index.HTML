@@ -1,136 +1,83 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Futuro do Exercício</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="CSS/index.css" />
 </head>
 
 <body>
-    <div class="container">
 
-
-        <nav class="sidebar">
-            <button>Menu</button>
-            <button>Exercícios</button>
-            <button>Nossa IA</button>
-            <button>Vídeos</button>
-            <button>Ajuda</button>
-            <button>Sobre nós</button>
-            <button>Fale conosco</button>
+    <header class="navbar">
+        <div class="logo">Futuro do Exercício</div>
+        <nav class="nav-links" id="navLinks">
+            <a href="#">Início</a>
+            <a href="#">Exercícios</a>
+            <a href="#">Vídeos</a>
+            <a href="#">Sobre nós</a>
+            <a href="#">Fale conosco</a>
         </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </header>
 
 
-        <main class="content">
-            <section class="intro">
-                <div class="intro-text">
-                    <h1>Bem vindo ao futuro do exercício</h1>
-                    <h2><strong>O Futuro</strong> do Seu Corpo Começa Agora</h2>
-                    <p>
-                        Nosso <strong>objetivo</strong> é ajudar você da melhor e mais segura forma possível. Aqui,
-                        buscamos entender suas necessidades, superar suas expectativas e apoiar sua jornada
-                        para uma vida mais feliz e saudável — sempre com a ajuda da tecnologia.
-                    </p>
-                    <p class="highlight">Vamos treinar com propósito.<br>Vamos treinar com tecnologia.</p>
-                </div>
-                <div class="intro-image">
-                <img src="https://s2.glbimg.com/2zSdMWrW5aYvEx9CyeqIRTjEBdY=/e.glbimg.com/og/ed/f/original/2020/03/24/treino_unsplash_2.jpg" alt="Mulher fazendo abdominal">
-                </div>
-            </section>
-
-          <!--Início da Aba Exercícios-->
-            <section>
-                <h2 class="accordion">INICIANTE</h2>
-                <div class="informacao">
-                    <p class="titulo">Exemplos de exercícios:</p>
-                    <ul>
-                        <li>Alongamentos</li>
-                        <li>Dança</li>
-                        <li>Yoga</li>
-                    </ul>
-                    <h3>Descrição:</h3>
-                    <p>O nível iniciante é recomendado para pessoas com necessidades físicas específicas, de saúde ou público mais velho. Segue recomendações científicas com foco em segurança.</p>
-                </div>
-                
-                <h2 class="accordion">INTERMEDIÁRIO</h2>
-                <div class="informacao">
-                    <p class="titulo">Exemplos de exercícios:</p>
-                    <ul>
-                        <li>Alongamentos</li>
-                        <li>Flexões Simples</li>
-                        <li>Exercícios Físicos</li>
-                    </ul>
-                    <h3>Descrição:</h3>
-                    <p>Para pessoas que já praticam atividades físicas regularmente, mas que ainda estão em desenvolvimento.</p>
-                </div>
-                
-                <h2 class="accordion">AVANÇADO</h2>
-                <div class="informacao">
-                    <p class="titulo">Exemplos de exercícios:</p>
-                    <ul>
-                        <li>Alongamentos Avançados</li>
-                        <li>Flexões</li>
-                        <li>Burpee</li>
-                    </ul>
-                    <h3>Descrição:</h3>
-                    <p>Indicado para quem tem alta experiência em atividades físicas. A execução incorreta pode trazer riscos.</p>
-                </div>
-            </section>
-        </main>
-    </div>
-
-<footer>
-  <div class="footer-container">
-    
-
-    <div class="textoFoot">
-      <p class="footerT">Sobre nós</p>
-      <p>Somos estudantes do Primeiro ano do Ensino Médio do Instituto Federal Catarinense Campus Concórdia.</p>
-      <p>Criamos esse site com o intuito de ajudar as pessoas que querem se exercitar em casa, com dicas e auxílios na realização dos exercícios.</p>
-
-    </div>
+    <section class="hero">
+        <div class="texto-sobreposto">
+            <h1>Bem-vindo ao futuro do exercício</h1>
+            <h2><strong>O Futuro do Seu Corpo Começa Agora</strong></h2>
+            <p>
+                Nosso <strong>objetivo</strong> é ajudar você da melhor e mais segura forma possível.
+                <strong>Aqui</strong>, buscamos entender suas necessidades, superar suas expectativas e
+                apoiar sua jornada para uma vida mais feliz e saudável — sempre com a ajuda da tecnologia.
+            </p>
+            <h3>Vamos treinar com propósito.<br />Vamos treinar com tecnologia.</h3>
+        </div>
+    </section>
 
 
-    <div class="logoIsomove">
-      <img src="caminho/para/logo-isomove.png" alt="Logo da Isomove">
-    </div>
+    <section class="levels">
+        <div class="card">
+            <img src="Imagen/img-1-heder.webp" alt="Nível Iniciante">
+            <h4>INICIANTE</h4>
+            <p><strong>Exemplos de exercícios:</strong><br />
+                - Alongamentos<br />
+                - Yoga<br />
+                - Caminhadas</p>
+            <p><strong>Descrição:</strong><br />
+                Ideal para pessoas com pouca ou nenhuma experiência, focado em mobilidade, consciência corporal
+                e saúde geral.</p>
+        </div>
+        <div class="card">
+            <img src="./Imagen/img-2-heder.webp" alt="Nível Intermediário">
+            <h4>INTERMEDIÁRIO</h4>
+            <p><strong>Exemplos de exercícios:</strong><br />
+                - Alongamentos moderados<br />
+                - Flexões básicas<br />
+                - Exercícios físicos</p>
+            <p><strong>Descrição:</strong><br />
+                Para quem já pratica exercícios regularmente. Desenvolve resistência, força e condicionamento
+                físico mais intenso.</p>
+        </div>
+        <div class="card">
+            <img src="./Imagen/img-3-heder.webp" alt="Nível Avançado">
+            <h4>AVANÇADO</h4>
+            <p><strong>Exemplos de exercícios:</strong><br />
+                - Alongamentos específicos<br />
+                - Flexões<br />
+                - Calistenia</p>
+            <p><strong>Descrição:</strong><br />
+                Nível indicado para pessoas experientes que buscam performance, força e treinos intensos.</p>
+        </div>
+    </section>
 
-
-    <div class="footer-bottom">
-      <div class="logoIFC">
-        <img src="IFC.png" alt="Logo do Instituto Federal Catarinense">
-      </div>
-
-      <div class="contato">
-        <p>Contato:</p>
-        <p>📧 E-mail: calestemia25@gmail.com</p>
-        <p>📍 Localização: Instituto Federal Catarinense - Campus Concórdia</p>
-      </div>
-    </div>
-    
-  </div>
-</footer>
-
-
-<script>
-    const accordions = document.querySelectorAll(".accordion");
-
-    accordions.forEach(acc => {
-        acc.addEventListener("click", () => {
-            acc.classList.toggle("active");
-            const informacao = acc.nextElementSibling;
-            informacao.classList.toggle("show");
-        });
-    });
-</script>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </body>
 
-
-
 </html>
-
-
-
