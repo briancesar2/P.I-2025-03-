@@ -41,72 +41,42 @@
                 </div>
             </section>
 
-            <!---Início da aba níveis--->
-
-            <section class="niveis">
-                <div class="abrir">
-                    <h1>INICIANTE</h1>
-                    <img class="seta" src=./imagens/seta1.png>
+          <!--Início da Aba Exercícios-->
+            <section
+                <h2 class="accordion">INICIANTE</h2>
+                <div class="informacao">
+                    <p class="titulo">Exemplos de exercícios:</p>
+                    <ul>
+                        <li>Alongamentos</li>
+                        <li>Dança</li>
+                        <li>Yoga</li>
+                    </ul>
+                    <h3>Descrição:</h3>
+                    <p>O nível iniciante é recomendado para pessoas com necessidades físicas específicas, de saúde ou público mais velho. Segue recomendações científicas com foco em segurança.</p>
                 </div>
-                <div class="level">
-                    <div>
-                        <h3>Exemplos de exercícios:</h3>
-                        <ul>
-                            <li>Alongamentos</li>
-                            <li>Dança</li>
-                            <li>Yoga</li>
-                        </ul>
-                        <br>
-                        <p>Descrição:<br>
-                            O nível iniciante é recomendado para pessoas com necessidades físicas específicas,<br>
-                            de saúde ou público mais velho. Segue recomendações científicas com foco em segurança.
-                        </p>  
-                    </div>
-                    <video> <source src="./videos" type="video/mp4"> </video>
+                
+                <h2 class="accordion">INTERMEDIÁRIO</h2>
+                <div class="informacao">
+                    <p class="titulo">Exemplos de exercícios:</p>
+                    <ul>
+                        <li>Alongamentos</li>
+                        <li>Flexões Simples</li>
+                        <li>Exercícios Físicos</li>
+                    </ul>
+                    <h3>Descrição:</h3>
+                    <p>Para pessoas que já praticam atividades físicas regularmente, mas que ainda estão em desenvolvimento.</p>
                 </div>
-
-                <div class="abrir">
-                    <h1>INTERMEDIÁRIO</h1>
-                    <img class="seta" src=./imagens/seta1.png>
-                </div>
-                <div class="level">
-                    <div>
-                        <h3>Exemplos de exercícios:</h3>
-                        <ul>
-                            <li>Alongamentos</li>
-                            <li>Flexões Básicas</li>
-                            <li>Exercícios físicos</li>
-                        </ul>
-                        <br>
-                        <p>
-                            Descrição: <br>
-                            Para pessoas que já praticam atividades físicas regularmente, mas que ainda estão em
-                            desenvolvimento.
-                        </p>
-                    </div>
-                        <video> <source src="./" type="video/mp4"> </video>   
-                </div>
-
-
-                <div class="abrir">
-                    <h1>AVANÇADO</h1>
-                    <img class="seta" src=./imagens/seta1.png>
-                </div>
-                <div class="level">
-                    <div>
-                        <h3>Exemplos de exercícios:</h3>
-                        <ul>
-                            <li>Alongamentos avançados</li>
-                            <li>Flexões</li>
-                            <li>Calistenia</li>
-                        </ul>
-                        <br>
-                        <p>Descrição:<br>
-                            Indicado para quem tem alta experiência em atividades físicas. A execução incorreta pode trazer
-                            riscos.
-                        </p>
-                    </div>
-                    <video> <source src="./videos" type="video/mp4"> </video>
+                
+                <h2 class="accordion">AVANÇADO</h2>
+                <div class="informacao">
+                    <p class="titulo">Exemplos de exercícios:</p>
+                    <ul>
+                        <li>Alongamentos Avançados</li>
+                        <li>Flexões</li>
+                        <li>Burpee</li>
+                    </ul>
+                    <h3>Descrição:</h3>
+                    <p>Indicado para quem tem alta experiência em atividades físicas. A execução incorreta pode trazer riscos.</p>
                 </div>
             </section>
         </main>
@@ -149,10 +119,21 @@
 </footer>
 
 
+<script>
+    const accordions = document.querySelectorAll(".accordion");
 
+    accordions.forEach(acc => {
+        acc.addEventListener("click", () => {
+            acc.classList.toggle("active");
+            const informacao = acc.nextElementSibling;
+            informacao.classList.toggle("show");
+        });
+    });
+</script>
 </body>
 
 
 
 </html>
+
 
