@@ -1,121 +1,83 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Futuro do Exercício</title>
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="CSS/index.css" />
 </head>
 
 <body>
-    <div class="container">
-        <aside class="sidebar">
-            <button>Menu</button>
-            <button>Exercícios</button>
-            <button>Nossa IA</button>
-            <button>Vídeos</button>
-            <button>Ajuda</button>
-            <button>Sobre nós</button>
-            <button>Fale conosco</button>
-        </aside>
 
-        <main class="content">
-            <section class="hero">
-                <div class="container">
-                    <div class="fundo">
-                    <img src="./Imagen/img-1-heder.webp" alt="Imagem de fundo">
-                    </div>
-                    <div class="texto-sobreposto">
-
-                        <h1>Bem vindo ao futuro do exercício</h1>
-                        <h2><strong>O Futuro do Seu Corpo Começa Agora</strong></h2>
-                        <p>
-
-                            Nosso <strong>objetivo</strong> é ajudar você da melhor e mais segura forma possível.
-                            <strong>Aqui</strong>, buscamos entender suas necessidades, superar suas expectativas e
-                            apoiar sua
-                            jornada para uma vida mais feliz e saudável — sempre com a ajuda da tecnologia.
-                        </p>
-                        <h3>Vamos treinar com propósito.<br />Vamos treinar com tecnologia.</h3>
-                    </div>
-                </div>
-            </section>
-            
-            <!---Início da aba níveis--->
-
-            <section class="niveis">
-                <div class="abrir">
-                    <h1>INICIANTE</h1>
-                    <img class="seta" src=./imagens/seta1.png>
-                </div>
-                <div class="level">
-                    <div>
-                        <h3>Exemplos de exercícios:</h3>
-                        <ul>
-                            <li>Alongamentos</li>
-                            <li>Dança</li>
-                            <li>Yoga</li>
-                        </ul>
-                        <br>
-                        <p>Descrição:<br>
-                            O nível iniciante é recomendado para pessoas com necessidades físicas específicas,<br>
-                            de saúde ou público mais velho. Segue recomendações científicas com foco em segurança.
-                        </p>  
-                    </div>
-                    <video> <source src="./videos" type="video/mp4"> </video>
-                </div>
-
-                <div class="abrir">
-                    <h1>INTERMEDIÁRIO</h1>
-                    <img class="seta" src=./imagens/seta1.png>
-                </div>
-                <div class="level">
-                    <div>
-                        <h3>Exemplos de exercícios:</h3>
-                        <ul>
-                            <li>Alongamentos</li>
-                            <li>Flexões Básicas</li>
-                            <li>Exercícios físicos</li>
-                        </ul>
-                        <br>
-                        <p>
-                            Descrição: <br>
-                            Para pessoas que já praticam atividades físicas regularmente, mas que ainda estão em
-                            desenvolvimento.
-                        </p>
-                    </div>
-                        <video> <source src="./" type="video/mp4"> </video>   
-                </div>
+    <header class="navbar">
+        <div class="logo">Futuro do Exercício</div>
+        <nav class="nav-links" id="navLinks">
+            <a href="#">Início</a>
+            <a href="#">Exercícios</a>
+            <a href="#">Vídeos</a>
+            <a href="#">Sobre nós</a>
+            <a href="#">Fale conosco</a>
+        </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </header>
 
 
-                <div class="abrir">
-                    <h1>AVANÇADO</h1>
-                    <img class="seta" src=./imagens/seta1.png>
-                </div>
-                <div class="level">
-                    <div>
-                        <h3>Exemplos de exercícios:</h3>
-                        <ul>
-                            <li>Alongamentos avançados</li>
-                            <li>Flexões</li>
-                            <li>Calistenia</li>
-                        </ul>
-                        <br>
-                        <p>Descrição:<br>
-                            Indicado para quem tem alta experiência em atividades físicas. A execução incorreta pode trazer
-                            riscos.
-                        </p>
-                    </div>
-                    <video> <source src="./videos" type="video/mp4"> </video>
-                </div>
-            </section>
-        </main>
-    </div>
+    <section class="hero">
+        <div class="texto-sobreposto">
+            <h1>Bem-vindo ao futuro do exercício</h1>
+            <h2><strong>O Futuro do Seu Corpo Começa Agora</strong></h2>
+            <p>
+                Nosso <strong>objetivo</strong> é ajudar você da melhor e mais segura forma possível.
+                <strong>Aqui</strong>, buscamos entender suas necessidades, superar suas expectativas e
+                apoiar sua jornada para uma vida mais feliz e saudável — sempre com a ajuda da tecnologia.
+            </p>
+            <h3>Vamos treinar com propósito.<br />Vamos treinar com tecnologia.</h3>
+        </div>
+    </section>
+
+
+    <section class="levels">
+        <div class="card">
+            <img src="Imagen/img-1-heder.webp" alt="Nível Iniciante">
+            <h4>INICIANTE</h4>
+            <p><strong>Exemplos de exercícios:</strong><br />
+                - Alongamentos<br />
+                - Yoga<br />
+                - Caminhadas</p>
+            <p><strong>Descrição:</strong><br />
+                Ideal para pessoas com pouca ou nenhuma experiência, focado em mobilidade, consciência corporal
+                e saúde geral.</p>
+        </div>
+        <div class="card">
+            <img src="./Imagen/img-2-heder.webp" alt="Nível Intermediário">
+            <h4>INTERMEDIÁRIO</h4>
+            <p><strong>Exemplos de exercícios:</strong><br />
+                - Alongamentos moderados<br />
+                - Flexões básicas<br />
+                - Exercícios físicos</p>
+            <p><strong>Descrição:</strong><br />
+                Para quem já pratica exercícios regularmente. Desenvolve resistência, força e condicionamento
+                físico mais intenso.</p>
+        </div>
+        <div class="card">
+            <img src="./Imagen/img-3-heder.webp" alt="Nível Avançado">
+            <h4>AVANÇADO</h4>
+            <p><strong>Exemplos de exercícios:</strong><br />
+                - Alongamentos específicos<br />
+                - Flexões<br />
+                - Calistenia</p>
+            <p><strong>Descrição:</strong><br />
+                Nível indicado para pessoas experientes que buscam performance, força e treinos intensos.</p>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+    </script>
 </body>
 
 </html>
-
-
-
-
