@@ -229,3 +229,58 @@ footer {
   text-align: right;
 }
 
+}
+.sobreprojeto {
+  background-color: #2c2e48;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.sobreprojeto h2 {
+  color: #ff6b1a;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.sobreprojeto p {
+  font-size: 20px;
+  max-width: 900px;
+  margin: 0 auto 15px;
+  line-height: 1.6;
+}
+
+
+.exercicios-img {
+  background-position: center;
+  height: 350px;
+  position: relative;
+}
+
+.textoexercicios {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  background-color: rgba(255, 255, 255, 0.85);
+  padding: 15px 40px;
+}
+
+.textoexercicios h3 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+  margin: 0;
+}
+.imagem-exercicio {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.imagem-exercicio img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
