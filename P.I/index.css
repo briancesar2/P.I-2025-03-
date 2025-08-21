@@ -117,52 +117,49 @@ li {
 }
 
 /* Níveis de treino */
-.niveis{
-    background-color: #ffffff;
-}
-.abrir{
-    height: 150px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;    
-    outline-width: 1px;
-    outline-style:double;
-    outline-color: #333;
-    
-}
-.abrir h1{
-    display: flex;
-    align-items: center;
-    padding: 30px;
-}
-.seta{  
-    width: 100px;
-    height: 100px;
-    rotate: 180deg;
-}
 
-
-.level li{
-    list-style: none;
-    
-}
-
-.descricao{
-    font-size: 100px;
-}
-
-.level h3 {
-  margin-bottom: 10px;
-  color: #b45309;
-}
-
-.level {
-    padding: 8px    ;
-  font-size: 20px;
-  margin: 10px;
+.accordion {
+  cursor: pointer;
+  padding: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  text-align: left;
+  outline: none;
+  background-color: #fff;
   display: flex;
-  justify-content:space-between;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
 }
+
+.accordion:after {
+  content: "▼";
+  font-size: 13px;
+  transition: transform 0.3s ease;
+}
+
+.accordion.active:after {
+  transform: rotate(180deg);
+}
+
+.informacao {
+  padding: 0 18px;
+  display: none;
+  background-color: #f9f9f9;
+  overflow: hidden;
+}
+
+.informacao.show {
+  display: block;
+}
+
+.titulo {
+  color: darkorange;
+  font-weight: bold;
+}
+
+/* Inicio do footer /*
 
 footer {
   background-color: #e47926;
@@ -283,4 +280,5 @@ footer {
   height: auto;
   display: block;
 }
+
 
