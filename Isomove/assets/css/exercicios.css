@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #f0951f;
+  background-color: #ffffff;
   color: #333;
   margin-top: 75px;
 }
@@ -55,14 +55,8 @@ body {
   cursor: pointer;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
-  color: #333;
-}
-
 h1 {
-  background-color: #ff6600;
+  background-color: #F0711F;
   color: white;
   padding: 20px;
   margin: 0;
@@ -73,16 +67,16 @@ h1 {
   display: flex;
   justify-content: center;
   background-color: #fff;
-  border-bottom: 2px solid #ff6600;
+  border-bottom: 2px solid #F0711F;
 }
 
 .tab {
   padding: 12px 24px;
   cursor: pointer;
   background-color: white;
-  border: 2px solid #ff6600;
+  border: 2px solid #F0711F;
   border-bottom: none;
-  color: #ff6600;
+  color: #F0711F;
   font-weight: bold;
   margin: 0 5px;
   border-radius: 5px 5px 0 0;
@@ -94,14 +88,14 @@ h1 {
 }
 
 .tab.active {
-    background-color: #ff6600;
+    background-color: #F0711F;
     color: white;
 }
 
 .content {
     display: none;
     padding: 20px;
-    border: 2px solid #ff6600;
+    border: 2px solid #F0711F;
     border-top: none;
     border-radius: 0 0 5px 5px;
     background-color: white;
@@ -114,7 +108,7 @@ h1 {
 }
 
 h2 {
-    color: #ff6600;
+    color: #F0711F;
 }
 
 ul {
@@ -123,11 +117,10 @@ ul {
 }
 
 iframe {
-    width: 100%;
-    max-width: 500px;
+    width: 80%;
     height: 280px;
     margin-bottom: 10px;
-    border: 2px solid #ff6600;
+    border: 2px solid #F0711F;
     border-radius: 5px;
 }
 
