@@ -8,7 +8,7 @@
 body {
   background-color: #f0951f;
   color: #333;
-  margin: 99px;
+  margin-top: 75px;
 }
 
 .navbar {
@@ -56,37 +56,37 @@ body {
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #ffffff;
-    color: #333;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
 }
 
 h1 {
-    background-color: #ff6600;
-    color: white;
-    padding: 20px;
-    margin: 0;
-    text-align: center;
+  background-color: #ff6600;
+  color: white;
+  padding: 20px;
+  margin: 0;
+  text-align: center;
 }
 
 .tabs {
-    display: flex;
-    justify-content: center;
-    background-color: #fff;
-    border-bottom: 2px solid #ff6600;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-bottom: 2px solid #ff6600;
 }
 
 .tab {
-    padding: 12px 24px;
-    cursor: pointer;
-    background-color: white;
-    border: 2px solid #ff6600;
-    border-bottom: none;
-    color: #ff6600;
-    font-weight: bold;
-    margin: 0 5px;
-    border-radius: 5px 5px 0 0;
-    transition: background-color 0.3s ease;
+  padding: 12px 24px;
+  cursor: pointer;
+  background-color: white;
+  border: 2px solid #ff6600;
+  border-bottom: none;
+  color: #ff6600;
+  font-weight: bold;
+  margin: 0 5px;
+  border-radius: 5px 5px 0 0;
+  transition: background-color 0.3s ease;
 }
 
 .tab:hover {
@@ -166,7 +166,6 @@ footer {
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  
 }
 
 .textoFoot {
@@ -261,6 +260,15 @@ footer {
   width: auto;
 }
 
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+  right: 30px;
+}
 
 .logoIFC img {
   padding-bottom: 50px;
