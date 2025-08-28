@@ -4,23 +4,16 @@
     <link rel="stylesheet" href="assets/css/exercicios.css">
     <title>Isomove</title>
 </head>
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <link rel="stylesheet" href="exercicios.css">
-    <title>Exercícios</title>
-</head>
 <body>
     <header class="navbar">
         <div class="logo">Futuro do Exercício</div>
         <nav class="nav-links" id="navLinks">
             <a href="index.html">Início</a>
             <a href="exercicios.html">Exercícios</a>
-            <a href="#">Vídeos</a>
-            <a href="#">Sobre nós</a>
-            <a href="#">Fale conosco</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="index.html#contato">Fale Conosco</a>
+            <a href="formulario.html">Formulário</a>
         </nav>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
     </header>
 
     <div class="tabs">
@@ -117,6 +110,7 @@
         <p class="footerT">Sobre nós</p>
         <p>Somos estudantes do Primeiro ano do Ensino Médio do Instituto Federal Catarinense Campus Concórdia.</p>
         <p>Criamos esse site com o intuito de ajudar as pessoas que querem se exercitar em casa, com dicas e auxílios na realização dos exercícios.</p>
+
         
         </div>
 
@@ -140,42 +134,6 @@
         
     </div>
     </footer>
-        <script>
-        function openTab(tabId) {
-            const tabs = document.querySelectorAll('.tab');
-            const contents = document.querySelectorAll('.content');
 
-            tabs.forEach(tab => tab.classList.remove('active'));
-            contents.forEach(content => content.classList.remove('active'));
-
-            document.querySelector(`.tab[onclick="openTab('${tabId}')"]`).classList.add('active');
-            document.getElementById(tabId).classList.add('active');
-    }
-        function toggleMenu() {
-            const navLinks = document.getElementById('navLinks');
-            navLinks.classList.toggle('active');
-        }
-    </script>
-
-
-
-    <script>
-        function openTab(tabId) {
-            const tabs = document.querySelectorAll('.tab');
-            const contents = document.querySelectorAll('.content');
-
-            tabs.forEach(tab => tab.classList.remove('active'));
-            contents.forEach(content => content.classList.remove('active'));
-
-            document.querySelector(`.tab[onclick="openTab('${tabId}')"]`).classList.add('active');
-            document.getElementById(tabId).classList.add('active');
-    }
-    </script>
-    <script>
-        function toggleMenu() {
-            const navLinks = document.getElementById('navLinks');
-            navLinks.classList.toggle('active');
-        }
-    </script>
 </body>
 </html>
