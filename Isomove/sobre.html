@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Sobre Nós</title>
+  <link rel="stylesheet" href="/assets/css/exercicios.css">
+</head>
+<body>
+  <header class="navbar">
+        <div class="logo">Futuro do Exercício</div>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Início</a>
+            <a href="exercicios.html">Exercícios</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="index.html#contato">Fale Conosco</a>
+            
+    <a href="formulario.html">Formulário</a>
+</nav>
+<p><a class="btn-form-link" href="formulario.html" style="display:inline-block;padding:10px 14px;border-radius:6px;background:#2d89ef;color:#fff;text-decoration:none;margin:8px 0;">Ir para formulário</a></p>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </header>
+  
+<main class="sobre">
+  <section class="sobre-container">
+    <h1>Sobre Nós</h1>
+    <p>Na Isomove, acreditamos em movimento como estilo de vida. Nosso objetivo é ajudar cada pessoa a descobrir seu potencial físico de forma saudável, acessível e personalizada.</p>
+
+    <div class="cards">
+      <div class="card">
+        <h2>Missão</h2>
+        <p>Levar saúde e bem-estar através da prática de exercícios físicos.</p>
+      </div>
+      <div class="card">
+        <h2>Visão</h2>
+        <p>Ser referência em programas de avaliação física e treinos acessíveis.</p>
+      </div>
+      <div class="card">
+        <h2>Valores</h2>
+        <p>Compromisso, dedicação e inovação contínua para nossos alunos.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+  
+<footer id="contato">
+    <div class="footer-container">
+        
+
+        <div class="textoFoot">
+        <p class="footerT">Sobre nós</p>
+        <p>Somos estudantes do Primeiro ano do Ensino Médio do Instituto Federal Catarinense Campus Concórdia.</p>
+        <p>Criamos esse site com o intuito de ajudar as pessoas que querem se exercitar em casa, com dicas e auxílios na realização dos exercícios.</p>
+
+        
+        </div>
+
+
+        <div class="logoIsomove">
+        <img src="assets/img/logo.png" alt="Logo da Isomove">
+        </div>
+
+
+        <div class="footer-bottom">
+        <div class="logoIFC">
+            <img src="assets/img/IFC.png" alt="Logo do Instituto Federal Catarinense">
+        </div>
+
+        <div class="contato">
+            <p>Contato:</p>
+            <p>📧 E-mail: contatoisomove@gmail.com</p>
+            <p>📍 Localização: Instituto Federal Catarinense - Campus Concórdia</p>
+        </div>
+        </div>
+        
+    </div>
+    </footer>
+
+<script>
+window.toggleMenu = window.toggleMenu || function(){
+  var nl = document.getElementById('navLinks');
+  if(nl){ nl.classList.toggle('open'); }
+};
+</script>
+</body>
+</html>

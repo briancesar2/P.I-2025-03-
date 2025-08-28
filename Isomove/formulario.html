@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Isomove</title>
+    <link rel="stylesheet" href="assets/css/styleform.css">
+</head>
+<body>
+    <header class="hero">
+            <div class="hero-content">
+                <h1>Isomove</h1>
+                <p>Ponha seu corpo em movimento</p>
+            </div>
+    </header>
+    <section class="intro">
+        <div class="intro-text">
+            <h2>Formulário de Avaliação de Aptidão Física</h2>
+        </div>
+        <img src="assets/img/respondendo_formulario.avif" alt="Pessoa preenchendo formulário">
+    </section>
+    <form id="avaliacaoForm">
+        <div class="pergunta">
+            <label>1. Qual é o seu nome completo?</label>
+            <input type="text" name="nome">
+        </div>
+
+        <div class="pergunta">
+            <label>2. Qual é sua idade?</label>
+            <input type="number" name="idade"> anos
+        </div>
+
+        <div class="pergunta">
+            <label>3. Qual é sua altura?</label>
+            <input type="number" name="altura"> cm
+        </div>
+
+        <div class="pergunta">
+            <label>4. Qual é o seu peso atual?</label>
+            <input type="number" name="peso"> kgs
+        </div>
+
+        <div class="pergunta">
+            <label>5. Qual seu gênero biológico?</label><br>
+            <input type="radio" name="genero" value="Feminino"> Feminino<br>
+            <input type="radio" name="genero" value="Masculino"> Masculino
+        </div>
+
+        <div class="pergunta">
+            <label>6. Você sente dores musculares ou nas articulações com frequência?</label><br>
+            <input type="radio" name="dores" value="Sim"> Sim<br>
+            <input type="radio" name="dores" value="Não"> Não
+        </div>
+
+        <div class="pergunta">
+            <label>7. A quanto tempo você não realiza atividades físicas frequentemente?</label><br>
+            <input type="radio" name="tempo" value="Menos de 1 ano"> Menos de 1 ano<br>
+            <input type="radio" name="tempo" value="Entre 2 e 4 anos"> Entre 2 e 4 anos<br>
+            <input type="radio" name="tempo" value="Mais de 5 anos"> Mais de 5 anos
+        </div>
+
+        <div class="pergunta">
+            <label>8. Você fuma ou já fumou ativamente?</label><br>
+            <input type="radio" name="fumo" value="Fumo ativamente"> Fumo ativamente<br>
+            <input type="radio" name="fumo" value="Nunca fumei"> Nunca fumei<br>
+            <input type="radio" name="fumo" value="Já fumei, porém não fumo mais"> Já fumei, porém não fumo mais
+        </div>
+
+        <div class="pergunta">
+            <label>9. Como você classificaria sua alimentação no dia a dia?</label><br>
+            <input type="radio" name="alimentacao" value="Excelente"> Excelente<br>
+            <input type="radio" name="alimentacao" value="Boa"> Boa<br>
+            <input type="radio" name="alimentacao" value="Mediana"> Mediana<br>
+            <input type="radio" name="alimentacao" value="Ruim"> Ruim<br>
+            <input type="radio" name="alimentacao" value="Muito ruim"> Muito ruim
+        </div>
+
+        <div class="pergunta">
+            <label>10. Quantas horas você costuma dormir por noite, em média?</label><br>
+            <input type="radio" name="sono" value="Menos de 5 horas"> Menos de 5 horas<br>
+            <input type="radio" name="sono" value="De 5 a 6 horas"> De 5 a 6 horas<br>
+            <input type="radio" name="sono" value="De 7 a 8 horas"> De 7 a 8 horas<br>
+            <input type="radio" name="sono" value="Mais de 8 horas"> Mais de 8 horas
+        </div>
+
+        <button type="submit" class="botaosubmit">Submeter Formulário</button>
+    </form>
+    <footer id="contato">
+        <div class="footer-container">
+            
+
+            <div class="textoFoot">
+            <p class="footerT">Sobre nós</p>
+            <p>Somos estudantes do Primeiro ano do Ensino Médio do Instituto Federal Catarinense Campus Concórdia.</p>
+            <p>Criamos esse site com o intuito de ajudar as pessoas que querem se exercitar em casa, com dicas e auxílios na realização dos exercícios.</p>
+
+            
+            </div>
+
+
+            <div class="logoIsomove">
+            <img src="assets/img/logo.png" alt="Logo da Isomove">
+            </div>
+
+
+            <div class="footer-bottom">
+            <div class="logoIFC">
+                <img src="assets/img/IFC.png" alt="Logo do Instituto Federal Catarinense">
+            </div>
+
+            <div class="contato">
+                <p>Contato:</p>
+                <p>📧 E-mail: contatoisomove@gmail.com</p>
+                <p>📍 Localização: Instituto Federal Catarinense - Campus Concórdia</p>
+            </div>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="/assets/js/scriptform.js"></script>
+</body>
+</html>

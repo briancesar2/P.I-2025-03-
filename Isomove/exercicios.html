@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="assets/css/exercicios.css">
+    <title>Exercícios</title>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">Futuro do Exercício</div>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Início</a>
+            <a href="exercicios.html">Exercícios</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="index.html#contato">Fale Conosco</a>
+            
+    <a href="formulario.html">Formulário</a>
+</nav>
+<p><a class="btn-form-link" href="formulario.html" style="display:inline-block;padding:10px 14px;border-radius:6px;background:#2d89ef;color:#fff;text-decoration:none;margin:8px 0;">Ir para formulário</a></p>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <div class="tabs">
+        <div class="tab active" onclick="openTab('iniciante')">Iniciante</div>
+        <div class="tab" onclick="openTab('intermediario')">Intermediário</div>
+        <div class="tab" onclick="openTab('avancado')">Avançado</div>
+    </div>
+
+    <div id="iniciante" class="content active">
+        <h2>Abdominal Simples</h2>
+        <iframe src="assets/vid/abdominal simples.mp4" frameborder="0" allowfullscreen></iframe>
+        <p>O abdominal simples é um exercício clássico de fortalecimento, com foco nos músculos abdominais. Ele é amplamente utilizado em treinos de condicionamento físico, reabilitação e estética corporal.</p>
+    
+        <h2>Agachamento Simples</h2>
+        <iframe src="assets/vid/agachamento simples.mp4" frameborder="0" allowfullscreen></iframe>
+        <p>O agachamento simples é um exercício fundamental de força que trabalha principalmente os músculos das pernas e glúteos, além de ativar o core para estabilização. Ele pode ser feito com o peso do próprio corpo.</p>
+    
+        <h2>Flexões na Parede</h2>
+        <iframe src="assets/vid/flexões na parede.mp4" frameborder="0" allowfullscreen></iframe>
+        <p>As flexões na parede são uma variação leve das flexões tradicionais, indicadas para iniciantes. Elas fortalecem peitoral, ombros e tríceps, com menor carga sobre os braços e articulações.</p>
+    </div>
+
+    <div id="intermediario" class="content">
+        <h2>Abdominal cruzado</h2>
+        <iframe src="assets/vid/abdominal cruzado.mp4" frameborder="0" allowfullscreen></iframe>
+        <p>O abdominal cruzado é uma variação do abdominal tradicional que ativa o reto abdominal e os oblíquos, promovendo o fortalecimento da região lateral do corpo.</p>
+    
+
+        <h2>Polichinelo</h2>
+        <iframe src="assets/vid/polichinelo.mp4" frameborder="0" allowfullscreen></iframe>
+        <p>O polichinelo é um exercício aeróbico simples e dinâmico que trabalha a coordenação motora, o condicionamento cardiovascular e ativa diversos músculos ao mesmo tempo, como pernas e braços.</p>
+
+        <h2>Prancha Simples</h2>
+        <iframe src="assets/vid/prancha simples.mp4" frameborder="0" allowfullscreen></iframe>
+        <p>A prancha simples é um exercício isométrico que fortalece o core, incluindo abdômen, lombar e glúteos. Melhora a postura, o equilíbrio e a estabilidade, sendo eficaz mesmo sem movimentos.</p>
+    </div>
+
+    <div id="avancado" class="content">
+        <h2>Burpee</h2>
+        <iframe src="assets/vid/burpee.mp4" frameborder="0" allowfullscreen></iframe>
+        <p>O burpee é um exercício completo e intenso que combina agachamento, flexão e salto vertical em um único movimento. Ele trabalha o corpo todo, melhora o condicionamento cardiovascular, força, coordenação e auxilia na queima calórica.</p>
+        
+        <h2>Prancha com mão no ombro</h2>
+        <iframe src="assets/vid/prancha com mão no ombro.mp4" frameborder="0" allowfullscreen></iframe>
+        <p>A prancha com mão no ombro é uma variação da prancha tradicional que adiciona movimento e instabilidade, ativando ainda mais o core, além de trabalhar o equilíbrio, os ombros e a coordenação motora.</p>
+
+        <h2>Agachamento com salto</h2>
+        <iframe src="assets/vid/agachamento com salto.mp4" frameborder="0" allowfullscreen></iframe>
+        <p>O agachamento com salto é um exercício pliométrico que combina o fortalecimento das pernas e glúteos com um movimento explosivo de salto. Além de trabalhar a força muscular, melhora a potência, a resistência cardiovascular e a coordenação motora.</p>
+    </div>
+
+    <script>
+        function openTab(tabId) {
+            const tabs = document.querySelectorAll('.tab');
+            const contents = document.querySelectorAll('.content');
+
+            tabs.forEach(tab => tab.classList.remove('active'));
+            contents.forEach(content => content.classList.remove('active'));
+
+            document.querySelector(`.tab[onclick="openTab('${tabId}')"]`).classList.add('active');
+            document.getElementById(tabId).classList.add('active');
+    }
+    </script>
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+
+    
+<footer id="contato">
+    <div class="footer-container">
+        
+
+        <div class="textoFoot">
+        <p class="footerT">Sobre nós</p>
+        <p>Somos estudantes do Primeiro ano do Ensino Médio do Instituto Federal Catarinense Campus Concórdia.</p>
+        <p>Criamos esse site com o intuito de ajudar as pessoas que querem se exercitar em casa, com dicas e auxílios na realização dos exercícios.</p>
+
+        
+        </div>
+
+
+        <div class="logoIsomove">
+        <img src="assets/img/logo.png" alt="Logo da Isomove">
+        </div>
+
+
+        <div class="footer-bottom">
+        <div class="logoIFC">
+            <img src="assets/img/IFC.png" alt="Logo do Instituto Federal Catarinense">
+        </div>
+
+        <div class="contato">
+            <p>Contato:</p>
+            <p>📧 E-mail: contatoisomove@gmail.com</p>
+            <p>📍 Localização: Instituto Federal Catarinense - Campus Concórdia</p>
+        </div>
+        </div>
+        
+    </div>
+    </footer>
+
+</body>
+</html>
