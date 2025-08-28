@@ -338,3 +338,20 @@ footer {
 .card:hover {
   transform: translateY(-5px);
 }
+
+.content.active{
+display: flex;
+justify-content: space-evenly
+}
+
+
+.content p{
+text-align: center;
+width: 200px;
+}
+
+.exercicio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
