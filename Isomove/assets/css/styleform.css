@@ -31,6 +31,24 @@ body {
     animation: fadeInUp 1.2s ease;
 }
 
+.btn-inicio {
+    display: inline-block;
+    margin: 20px auto;
+    background-color: orange;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-inicio:hover {
+    background-color: #ff7a00;
+    transform: scale(1.05);
+}
+
 .intro {
     display: flex;
     align-items: center;

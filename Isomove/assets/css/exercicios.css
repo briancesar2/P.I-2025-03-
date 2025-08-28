@@ -261,15 +261,6 @@ footer {
   width: auto;
 }
 
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  position: absolute;
-  bottom: 20px;
-  left: 30px;
-  right: 30px;
-}
 
 .logoIFC img {
   padding-bottom: 50px;
@@ -285,11 +276,24 @@ footer {
   text-align: right;
 }
 
-html, body { height: 100%; }
-body { min-height: 100vh; display: flex; flex-direction: column; }
-main { flex: 1 0 auto; }
-footer { margin-top: auto; width: 100%; }
+html, body {
+  height: 100%;
+}
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+footer {
+  margin-top: auto;
+  width: 100%;
+}
 
 .sobre-container {
   max-width: 900px;
@@ -301,6 +305,7 @@ footer { margin-top: auto; width: 100%; }
 .sobre-container h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
+  border-radius: 5px
 }
 
 .sobre-container p {
