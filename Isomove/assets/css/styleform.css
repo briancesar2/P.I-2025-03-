@@ -174,13 +174,11 @@ footer {
   padding-left: 200px;
 }
 
-
 .footerT {
   margin-top: 20px;
   font-size: xx-large;
   margin-bottom: 10px;
 }
-
 
 .logoIsomove {
   padding-right: 10px;
@@ -195,7 +193,6 @@ footer {
   width: auto;
 }
 
-
 .footer-bottom {
   display: flex;
   justify-content: space-between;
@@ -206,11 +203,10 @@ footer {
   right: 30px;
 }
 
-
 .logoIFC img {
-  padding-bottom: 50px;
+  padding-bottom: 70px;
   padding-top: 10px;
-  height: 220px;
+  height: 160px;
   width: 100px;
 
 }
