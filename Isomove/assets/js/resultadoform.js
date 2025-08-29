@@ -1,21 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Recupera dados salvos
-    const nivel = localStorage.getItem("nivelExercicio");                 // <-- mantém a mesma chave
-    const dados = JSON.parse(localStorage.getItem("avaliacaoDados")) || {}; // <-- mantém a mesma chave
+    const nivel = localStorage.getItem("nivelExercicio");
+    const dados = JSON.parse(localStorage.getItem("avaliacaoDados")) || {};
     const nome = dados.nome || "Usuário";
 
     const nivelBox = document.getElementById("nivelExercicio");
     const feedbackLista = document.getElementById("feedbackLista");
 
-    // Mostra texto do nível
     if (nivelBox) {
         const texto = nivel ? `${nome}, seu nível é: ${nivel}` : "Não foi possível calcular seu nível.";
         nivelBox.textContent = texto;
 
-        // Remove classes anteriores (caso recarregue)
         nivelBox.classList.remove("nivel-iniciante", "nivel-intermediario", "nivel-avancado");
 
-        // Normaliza para garantir que funcione com ou sem acentos
         const n = (nivel || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 
         if (n === "iniciante") nivelBox.classList.add("nivel-iniciante");
@@ -23,12 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
         else if (n === "avancado") nivelBox.classList.add("nivel-avancado");
     }
 
-    // -----------------------------
-    // Feedbacks simples (iguais aos anteriores)
-    // -----------------------------
     if (!feedbackLista) return;
 
-    // Idade
     if (dados.idade) {
         const idade = parseInt(dados.idade);
         if (!isNaN(idade)) {
@@ -38,7 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // IMC
     if (dados.peso && dados.altura) {
         const peso = parseFloat(dados.peso);
         const altura = parseFloat(dados.altura) / 100;
@@ -54,21 +45,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Dores
     if (dados.dores === "Não") feedbackLista.innerHTML += "<li>Ausência de dores, bom sinal para prática física.</li>";
     if (dados.dores === "Sim") feedbackLista.innerHTML += "<li>Relato de dores, atenção para não exagerar nos treinos.</li>";
 
-    // Tempo sem treino
     if (dados.tempo === "Menos de 1 ano") feedbackLista.innerHTML += "<li>Prática recente de atividade física.</li>";
     if (dados.tempo === "Entre 2 e 4 anos") feedbackLista.innerHTML += "<li>Tempo moderado sem exercícios.</li>";
     if (dados.tempo === "Mais de 5 anos") feedbackLista.innerHTML += "<li>Longo tempo sem treinar, comece aos poucos.</li>";
 
-    // Fumo
     if (dados.fumo === "Nunca fumei") feedbackLista.innerHTML += "<li>Hábito saudável: nunca fumou.</li>";
     if (dados.fumo === "Já fumei, porém não fumo mais") feedbackLista.innerHTML += "<li>Ex-fumante, atenção ao condicionamento inicial.</li>";
     if (dados.fumo === "Fumo ativamente") feedbackLista.innerHTML += "<li>Tabagismo afeta o desempenho, inicie com treinos leves.</li>";
 
-    // Alimentação e Sono
     if (dados.alimentacao) feedbackLista.innerHTML += `<li>Sua alimentação foi classificada como: ${dados.alimentacao}.</li>`;
     if (dados.sono) feedbackLista.innerHTML += `<li>Sono médio: ${dados.sono}.</li>`;
 });
