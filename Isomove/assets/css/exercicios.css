@@ -348,3 +348,24 @@ width: 200px;
   flex-direction: column;
   align-items: center;
 }
+.participantes{
+  margin-top: 50px;
+}
+
+.participantes img{
+  width: 150px;
+}
+
+.participantes div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.participantes .card{
+  margin-top: 30px;
+}
+
+.participantes p{
+  margin-left: 20px;
+}
