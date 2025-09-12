@@ -59,7 +59,6 @@ body {
 .hero {
   background-size: cover;
   background-position: center;
-  height: 450px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -67,12 +66,19 @@ body {
   color: white;
   position: relative;
   margin-top: 70px; 
+  height: 600px;
 }
 
+.hero2{
+  background-image: url('../img/hero.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 700px;
+}
 .texto-sobreposto {
   max-width: 700px;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.7);
   border-radius: 10px;
 }
 
@@ -95,7 +101,7 @@ body {
   font-size: 18px;
   font-style: italic;
   font-weight: bold;
-  color: #ff7f00;
+  color: #ffffff;
 }
 
 
@@ -220,7 +226,6 @@ footer {
   padding-top: 10px;
   height: 220px;
   width: 100px;
-
 }
 
 .contato {
@@ -294,6 +299,7 @@ footer {
   font-size: large;
   text-align: right;
 }
+
 
 html, body { height: 100%; }
 body { min-height: 100vh; display: flex; flex-direction: column; }
